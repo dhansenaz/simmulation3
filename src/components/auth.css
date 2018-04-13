@@ -1,0 +1,62 @@
+.auth-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height:300px;
+    width:450px;
+    background: linear-gradient(-90deg #FFD670, #FF9970);
+    margin-top:-400px;
+    box-shadow: 5px 5px 10px #7777;
+    border-radius: 20px;
+}
+.username{
+    margin-top:-48px;
+    justify-content: center;
+    height:20px;
+    width: 200px;
+    margin-left: 100px;
+
+}
+
+.password{
+    margin-top:-60px;
+    justify-content: center;
+    height:20px;
+    width: 200px;
+    margin-left: 100px;
+    
+}
+.login{
+    height:25px;
+    width:80px;
+    background-color: #6666;
+    border:none;
+    border-radius: 6px;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top:100px;
+}
+.user-name{
+    color:white;
+    margin-top: 40px;
+    margin-left:10px;
+}
+.pass-word{
+    color:white;
+    margin-top: -5px;
+    margin-left:10px;
+}
+.register{
+    height:25px;
+    width:80px;
+    background-color: #6666;
+    border:none;
+    border-radius: 6px;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top:20px;
+}
