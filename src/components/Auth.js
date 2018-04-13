@@ -12,14 +12,15 @@ class Auth extends Component{
             password:''
         }
     }
-    postListing(){
+    createNewUser(){
         const newUser = {
             username: this.state.username,
             password: this.state.password
         }
-        axios.post('/api/createUser', newUser).then(response => {
-            // res.redirect('/dashboard')
-        })
+        console.log(newUser)
+        axios.post('/api/createuser', newUser).then((response  => {
+            console.log(response)
+        }))
     }
 
 
@@ -34,10 +35,11 @@ class Auth extends Component{
                     <h4 className="user-name"> Username</h4>
                     <h4 className="pass-word"> Password</h4>
                     </div>
+                    <input className="password" type="text" placeholder="Password" onChange={(e) => this.setState({password: e.target.value}) }></input>
                     <input className="username" type="text" placeholder="User Name" onChange={(e) => this.setState({username: e.target.value}) }></input>
-                    <input className="password" type="text" placeholder="User Name" onChange={(e) => this.setState({password: e.target.value}) }></input>
+                   
                     <button className="login">Login</button>
-                    <button className="register">Register</button>
+                    <button onClick={this.createNewUser.bind(this)}className="register">Register</button>
                     
                 </div>
                 
